@@ -1,0 +1,19 @@
+<h3>Пользователи</h3>
+<ul>
+  <li *ngFor="let user of users">
+    <app-user-detail [name]="user.name" [age]="user.age" />
+  </li>
+</ul>
+
+<button (click)="filterByGender(false)">Показать девушек</button>
+<button (click)="filterByGender(true)">Показать мужчин</button>
+
+<ul *ngIf="filterUsers">
+  <li *ngFor="let male of filterUsers">{{male.name}}</li>
+</ul>
+
+<ul>
+  <li *ngFor="let post of posts">{{post.title}}</li>
+
+</ul>
+
