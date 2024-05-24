@@ -1,3 +1,5 @@
+<h1>{{ namePage }}</h1>
+<h2>{{ title }}</h2>
 <h3>Пользователи</h3>
 <ul>
   <li *ngFor="let user of users">
@@ -9,11 +11,10 @@
 <button (click)="filterByGender(true)">Показать мужчин</button>
 
 <ul *ngIf="filterUsers">
-  <li *ngFor="let male of filterUsers">{{male.name}}</li>
+  <li *ngFor="let male of filterUsers">{{ male.name }}</li>
 </ul>
 
 <ul>
-  <li *ngFor="let post of posts">{{post.title}}</li>
-
+  <li *ngFor="let post of posts">{{ post.title }}</li>
 </ul>
-
+<router-outlet />

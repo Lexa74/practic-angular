@@ -1,0 +1,10 @@
+<div class="wrapper">
+  <div class="modal-form">
+    <p *ngIf="user">{{ user.name }}</p>
+    <p *ngIf="user">{{ user.age }}</p>
+    <p *ngIf="!user">Ошибка</p>
+
+    <button (click)="goBack()">Назад</button>
+    <button (click)="goToMain()">На главную</button>
+  </div>
+</div>
