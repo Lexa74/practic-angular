@@ -37,7 +37,7 @@ export class UsersComponent implements OnInit {
   namePage = 'Main page';
 
   filterByGender(isMale: boolean): void {
-    this.filterUsers = this.users.filter(el => el.isMale === isMale);
+    this.filterUsers = this.users.filter((el) => el.isMale === isMale);
   }
 
   setUserName(e: Event) {
@@ -46,9 +46,9 @@ export class UsersComponent implements OnInit {
   }
 
   getUsers(): void {
-    this.usersService.getUsers().subscribe(res => (this.users = res));
+    this.usersService.getUsers().subscribe((res) => (this.users = res));
   }
   getPosts(): void {
-    this.usersService.getPosts().subscribe(res => (this.posts = res));
+    this.usersService.getPosts().subscribe((res) => (this.posts = res));
   }
 }

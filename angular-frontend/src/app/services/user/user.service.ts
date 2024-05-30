@@ -17,7 +17,7 @@ export class UserService {
     return this.http.get<IPost[]>('https://jsonplaceholder.typicode.com/posts');
   }
   getUserByName(name: string): Observable<IUser | undefined> {
-    const user = USERS.find(el => el.name === name);
+    const user = USERS.find((el) => el.name === name);
 
     if (user) {
       return of(user);

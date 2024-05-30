@@ -28,7 +28,9 @@ export class UserCardComponent implements OnInit {
   getUserByName(): void {
     const name = this.route.snapshot.paramMap.get('name');
     if (name) {
-      this.userService.getUserByName(name).subscribe(res => (this.user = res));
+      this.userService
+        .getUserByName(name)
+        .subscribe((res) => (this.user = res));
     }
   }
 
