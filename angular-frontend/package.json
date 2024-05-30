@@ -8,7 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:angular-frontend": "node dist/angular-frontend/server/server.mjs",
-    "lint": "ng lint"
+    "lint": "ng lint --fix"
   },
   "private": true,
   "dependencies": {
