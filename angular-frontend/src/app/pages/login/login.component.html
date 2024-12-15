@@ -1,0 +1,12 @@
+<div class="wrapper">
+  <div class="modal-form">
+    <h1>Авторизация</h1>
+    <input [(ngModel)]="loginInput" type="text" placeholder="Введите имя" />
+    <input
+      [(ngModel)]="passwordInput"
+      type="text"
+      placeholder="Введите пароль" />
+    <p *ngIf="errMessage">{{ errMessage }}</p>
+    <button (click)="login()">Войти</button>
+  </div>
+</div>

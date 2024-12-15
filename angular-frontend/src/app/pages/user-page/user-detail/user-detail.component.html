@@ -1,0 +1,7 @@
+<a
+  routerLink="{{ name }}"
+  (click)="onClickSelectUser(name)"
+  [class.select]="selectedUser === name">
+  Имя: {{ name }}
+</a>
+<span>Возраст: {{ age }}</span>
